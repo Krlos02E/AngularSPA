@@ -1,0 +1,48 @@
+<div class="d-flex justify-content-center align-items-center">
+    <div class="mt-3 col-md-6">
+        <div class="row" style="text-align: center;">
+            <h4>Detalles de {{cursoActual.nombre}}</h4>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="productName">Nombre del Curso:</label>
+                <p class="form-control shadow-none">{{cursoActual.nombre}}</p>
+            </div>
+            <div class="col-md-6">
+                <label for="productDescription">Profesor:</label>
+                <p class="form-control shadow-none">{{cursoActual.profesor}}</p>
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col-md-6 py-2">
+                <label for="productPrice">Fecha de inicio:</label>
+                <p class="form-control shadow-none">{{cursoActual.fechaInicio | date:'dd/MM/yyyy'}}</p>
+            </div>
+            <div class="col-md-6 py-2">
+                <label for="productStock">Fecha de fin:</label>
+                <p class="form-control shadow-none">{{cursoActual.fechaFin | date:'dd/MM/yyyy'}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 py-2">
+                <label for="productPrice">Precio:</label>
+                <p class="form-control shadow-none">{{cursoActual.precio | currency: 'USD':'symbol':'1.2-2'}}</p>
+            </div>
+            <div class="col-md-6 py-2">
+                <label for="productStock">Tipo:</label>
+                <p class="form-control shadow-none">{{cursoActual.codigo}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div style="display: flex; justify-content: center; margin-top: 10px;">
+                <div class="btn-group col-md-3 my-3">
+                    <button type="button" class="btn btn-danger" (click)="onGoBack()">
+                        Regresar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

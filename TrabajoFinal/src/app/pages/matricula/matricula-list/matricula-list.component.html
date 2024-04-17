@@ -1,0 +1,35 @@
+<div class="body">
+    <swiper-container *ngIf="listaMatriculados.length > 0" class="swiper" style="width: 100%;" [loop]="true"
+        [slidesPerView]="2" [navigation]="true">
+        <swiper-slide class="slide" *ngFor="let curso of listaMatriculados">
+            <div class="card">
+                <img *ngIf='tipoCurso("INF",curso.codigo)' src="../../../../assets/imgs/Informatica.jpg"
+                    alt="Informatica" />
+                <img *ngIf='tipoCurso("MAT",curso.codigo)' src="../../../../assets/imgs/Matematica.jpg"
+                    alt="Matematica" />
+                <img *ngIf='tipoCurso("FIS",curso.codigo)' src="../../../../assets/imgs/Fisica.jpg" alt="Fisica" />
+                <p style="margin-top: 15px;">{{curso.nombre}}</p>
+                <div class="botones">
+                    <button class="btn btn-primary btn-detalles" (click)="onDetalle(curso)">
+                        Detalles
+                    </button>
+                    <button class="btn btn-warning btn-salir" (click)="onDelete(curso)">
+                        Salir del Curso
+                    </button>
+                </div>
+            </div>
+        </swiper-slide>
+    </swiper-container>
+    <div class="mensaje" *ngIf="listaMatriculados.length === 0">
+        <p>No tienes cursos inscritos</p>
+        <p class="sadFace">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-emoji-frown"
+                viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                <path
+                    d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.5 3.5 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.5 4.5 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5" />
+            </svg>
+        </p>
+        <button class="btn btn-primary" (click)="onGoToCursos()">Busca alguno que te interese!</button>
+    </div>
+</div>

@@ -1,0 +1,96 @@
+.body{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 85px;
+    
+}
+
+.card{
+    height: 410px;
+    width: 300px;
+    background-color: lightcoral;
+    border: 5px solid black;
+}
+
+.swiper {
+    display: flex;
+    justify-content: center; 
+    width: 50%; 
+
+}
+
+.slide{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 60%;
+    height: 255px;
+    margin-top: 10px;
+    margin-left: 20%;
+    border: 5px solid black ;
+}
+
+.card p{
+    text-align: center;
+    font-weight: bold;
+    color: darkred;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-salir{
+    width: 100px;
+    border: 5px solid darkgoldenrod;
+    border-radius: 14px;
+}
+
+.btn-detalles{
+    width: 100px;
+
+    border: 5px solid darkblue;
+    border-radius: 14px;
+}
+
+.mensaje{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mensaje p{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+.mensaje .btn{
+    margin-top: 10px;
+    margin-left: 55px;
+    width: 250px;
+}
+
+.mensaje .btn{
+    animation-timing-function: linear;
+    animation: scaling 0.5s infinite
+}
+.mensaje .btn:hover{
+
+    animation: none;
+    transform: scale(1.2);
+}
+
+@keyframes scaling {
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

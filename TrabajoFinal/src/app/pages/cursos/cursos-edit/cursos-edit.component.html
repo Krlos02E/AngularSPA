@@ -1,0 +1,69 @@
+<div class="d-flex justify-content-center align-items-center body">
+    <form class="mt-3 col-md-6" #productForm="ngForm" (ngSubmit)="onEdit(productForm.value)">
+        <div class="row" style="text-align: center;">
+            <h4>Informacion del curso: {{cursoActual.nombre}}</h4>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="productName">Nombre del Curso:</label>
+                <input type="text" id="nombreCurso" name="nombre" class="form-control shadow-none" #nombre="ngModel" ngModel
+                    [ngClass]="{'is-valid': !nombre.invalid, 'is-invalid': nombre.invalid}" minlength="1"
+                    placeholder="Nombre" [(ngModel)]="cursoActual.nombre" required>
+            </div>
+            <div class="col-md-6">
+                <label for="productDescription">Profesor:</label>
+                <input type="text" id="profesor" name="profesor" class="form-control shadow-none"
+                    placeholder="Profesor" #profesor="ngModel" ngModel
+                    [ngClass]="{'is-valid': !profesor.invalid, 'is-invalid': profesor.invalid}" 
+                    minlength="1" [(ngModel)]="cursoActual.profesor" required>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-md-6 py-2">
+                <label for="productPrice">Fecha de inicio:</label>
+                <input type="date" id="fechaInicio" name="fechaInicio" class="form-control shadow-none"
+                    #fechaInicio="ngModel" ngModel
+                    [ngClass]="{'is-valid': !fechaInicio.invalid, 'is-invalid': fechaInicio.invalid}" 
+                    [(ngModel)]="cursoActual.fechaInicio" required>
+            </div>
+            <div class="col-md-6 py-2">
+                <label for="productStock">Fecha de fin:</label>
+                <input type="date" id="fechaFin" name="fechaFin" class="form-control shadow-none"
+                    #fechaFin="ngModel" ngModel
+                    [ngClass]="{'is-valid': !fechaFin.invalid, 'is-invalid': fechaFin.invalid}" 
+                    [(ngModel)]="cursoActual.fechaFin" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 py-2">
+                <label for="productPrice">Precio:</label>
+                <input type="number" id="precio" name="precio" class="form-control shadow-none"
+                    placeholder="Precio" #precio="ngModel" ngModel step="0.1"
+                    [ngClass]="{'is-valid': !precio.invalid, 'is-invalid': precio.invalid}"
+                    [(ngModel)]="cursoActual.precio" required>
+            </div>
+            <div class="col-md-6 py-2">
+                <label for="productStock">Tipo:</label>
+                <select class="form-select" name="codigo" id="codigo" #codigo="ngModel" ngModel
+                [ngClass]="{'is-valid': !codigo.invalid, 'is-invalid': codigo.invalid}"
+                [(ngModel)]="cursoActual.codigo" required>
+                    <option value="INF">INF</option>
+                    <option value="MAT">MAT</option>
+                    <option value="FIS">FIS</option>
+                </select>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 10px;">
+            <div class="btn-group col-md-3 my-3">
+                <button type="submit" class="btn btn-success" [disabled]="productForm.invalid">
+                    Guardar
+                </button>
+                <button type="button" class="btn btn-danger" (click)="onGoBack()">
+                    Regresar
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+<!--{{productForm.value | json}}-->

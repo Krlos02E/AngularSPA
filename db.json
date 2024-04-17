@@ -1,0 +1,213 @@
+{
+  "Cursos": [
+    {
+      "id": 1,
+      "nombre": "Fundamentos de Programacion en C",
+      "codigo": "INF",
+      "profesor": "Jorge Berrocal",
+      "fechaInicio": "15-02-2024",
+      "fechaFin": "13-04-2024",
+      "precio": 250.5
+    },
+    {
+      "nombre": "Programación en Java",
+      "profesor": "Carlos Heredia",
+      "fechaInicio": "08-02-2024",
+      "fechaFin": "10-04-2024",
+      "precio": 190.5,
+      "codigo": "INF",
+      "id": 2
+    },
+    {
+      "id": 4,
+      "nombre": "Álgebra Abstracta",
+      "codigo": "MAT",
+      "profesor": "Laura Ramírez",
+      "fechaInicio": "12-03-2024",
+      "fechaFin": "15-05-2024",
+      "precio": 210
+    },
+    {
+      "id": 5,
+      "nombre": "Desarrollo Web con Angular",
+      "codigo": "INF",
+      "profesor": "Javier Torres",
+      "fechaInicio": "05-02-2024",
+      "fechaFin": "07-04-2024",
+      "precio": 200.25
+    },
+    {
+      "id": 6,
+      "nombre": "Termodinámica",
+      "codigo": "FIS",
+      "profesor": "Ana Sánchez",
+      "fechaInicio": "18-02-2024",
+      "fechaFin": "20-04-2024",
+      "precio": 290.5
+    },
+    {
+      "id": 7,
+      "nombre": "Geometría Analítica",
+      "codigo": "MAT",
+      "profesor": "Pedro Martínez",
+      "fechaInicio": "15-03-2024",
+      "fechaFin": "17-05-2024",
+      "precio": 225.75
+    },
+    {
+      "id": 8,
+      "nombre": "Introducción a la Programación en GO",
+      "codigo": "INF",
+      "profesor": "Isabel López",
+      "fechaInicio": "10-02-2024",
+      "fechaFin": "12-04-2024",
+      "precio": 195
+    },
+    {
+      "id": 9,
+      "nombre": "Electricidad y Magnetismo",
+      "codigo": "FIS",
+      "profesor": "David Rodríguez",
+      "fechaInicio": "22-02-2024",
+      "fechaFin": "19-04-2024",
+      "precio": 275.25
+    },
+    {
+      "id": 11,
+      "nombre": "Estadística Aplicada",
+      "codigo": "MAT",
+      "profesor": "Fernanda Ruiz",
+      "fechaInicio": "12-04-2024",
+      "fechaFin": "14-06-2024",
+      "precio": 215
+    },
+    {
+      "id": 12,
+      "nombre": "Desarrollo de Aplicaciones Móviles",
+      "codigo": "INF",
+      "profesor": "Miguel González",
+      "fechaInicio": "15-03-2024",
+      "fechaFin": "17-05-2024",
+      "precio": 198.5
+    },
+    {
+      "nombre": "Óptica Antigua",
+      "profesor": "Elena García",
+      "fechaInicio": "28-02-2024",
+      "fechaFin": "25-04-2024",
+      "precio": 285.75,
+      "codigo": "FIS",
+      "id": 13
+    },
+    {
+      "id": 14,
+      "nombre": "Diseño de Interfaces de Usuario",
+      "codigo": "INF",
+      "profesor": "Isabel Martínez",
+      "fechaInicio": "18-03-2024",
+      "fechaFin": "20-05-2024",
+      "precio": 205.25
+    },
+    {
+      "id": 15,
+      "nombre": "Introduccion a Spring Framework",
+      "codigo": "INF",
+      "profesor": "Peter Parker",
+      "fechaInicio": "14-03-2024",
+      "fechaFin": "20-04-2024",
+      "precio": 205.25
+    },
+    {
+      "id": 16,
+      "nombre": "Física Computacional",
+      "codigo": "INF",
+      "profesor": "Daniel González",
+      "fechaInicio": "10-04-2024",
+      "fechaFin": "12-06-2024",
+      "precio": 215.5
+    },
+    {
+      "id": 17,
+      "nombre": "Desarrollo de Aplicaciones Web",
+      "codigo": "INF",
+      "profesor": "Laura Ramírez",
+      "fechaInicio": "25-03-2024",
+      "fechaFin": "27-05-2024",
+      "precio": 198
+    },
+    {
+      "id": 18,
+      "nombre": "Inteligencia Artificial",
+      "codigo": "INF",
+      "profesor": "Carlos Sánchez",
+      "fechaInicio": "22-04-2024",
+      "fechaFin": "24-06-2024",
+      "precio": 230.75
+    },
+    {
+      "id": 19,
+      "nombre": "Seguridad Informática",
+      "codigo": "INF",
+      "profesor": "Marta Torres",
+      "fechaInicio": "15-04-2024",
+      "fechaFin": "17-06-2024",
+      "precio": 220.25
+    },
+    {
+      "id": 20,
+      "nombre": "Desarrollo Ágil con Scrum",
+      "codigo": "INF",
+      "profesor": "Luisa Rodríguez",
+      "fechaInicio": "22-03-2024",
+      "fechaFin": "24-05-2024",
+      "precio": 195
+    },
+    {
+      "nombre": "Programacion Basica",
+      "profesor": "Carlos Heredia",
+      "fechaInicio": "16-08-1913",
+      "fechaFin": "14-09-1918",
+      "precio": 14,
+      "codigo": "INF",
+      "id": 21
+    }
+  ],
+  "Matricula": [
+    {
+      "idCurso": 7,
+      "codigo": "MAT",
+      "nombre": "Geometría Analítica",
+      "id": 14
+    },
+    {
+      "idCurso": 2,
+      "codigo": "INF",
+      "nombre": "Programación en Java",
+      "id": 16
+    },
+    {
+      "idCurso": 1,
+      "codigo": "INF",
+      "nombre": "Fundamentos de Programacion en C",
+      "id": 17
+    },
+    {
+      "idCurso": 9,
+      "codigo": "FIS",
+      "nombre": "Electricidad y Magnetismo",
+      "id": 18
+    },
+    {
+      "idCurso": 4,
+      "codigo": "MAT",
+      "nombre": "Álgebra Abstracta",
+      "id": 19
+    },
+    {
+      "idCurso": 1,
+      "codigo": "INF",
+      "nombre": "Fundamentos de Programacion en C",
+      "id": 20
+    }
+  ]
+}

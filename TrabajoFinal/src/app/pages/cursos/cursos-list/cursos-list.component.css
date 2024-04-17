@@ -1,0 +1,87 @@
+img {
+    height: 400px;
+    width: 300px;
+    display: block;
+    float: left;
+    border: 5px solid darkblue;
+    border-radius: 0px 20px 0px 20px;
+}
+
+.swiper {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center; 
+    width: 50%; 
+}
+
+.slide{
+    padding: 0px 70px;
+}
+
+.info{
+    background-color: lightblue;
+    position: fixed;
+    height: 70%;
+    width: 305px;
+    margin-left: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px solid darkred;
+    padding: 20px;
+    border-radius: 20px 0px 20px 0px;
+}
+
+p{
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.btnInscribir{
+    width: 90px;
+    position: fixed;
+    bottom: 40px;
+    margin-left: 140px;
+}
+
+.btnEditar{
+    position: fixed;
+    width: 90px;
+    bottom: 40px;
+    margin-left: 40px;
+}
+
+.btnBorrar{
+    position: fixed;
+    width: 90px;
+    bottom: 40px;
+    margin-left: 240px;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.btn:hover{
+    animation-name: scaling;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+
+}
+
+.aside{
+    margin-top: 30px;
+}
+
+@keyframes scaling {
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

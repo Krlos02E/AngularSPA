@@ -1,0 +1,32 @@
+<swiper-container class="swiper" [loop]="true" [slidesPerView]="1" [navigation]="true">
+    <swiper-slide class="slide" *ngFor="let curso of listCursos">
+        <img *ngIf='tipoCurso("INF",curso.codigo)' src="../../../../assets/imgs/Informatica.jpg" alt="Informatica" />
+        <img *ngIf='tipoCurso("MAT",curso.codigo)' src="../../../../assets/imgs/Matematica.jpg" alt="Matematica" />
+        <img *ngIf='tipoCurso("FIS",curso.codigo)' src="../../../../assets/imgs/Fisica.jpg" alt="Fisica" />
+        <div class="aside">
+            <div class="info">
+                <p>{{curso.nombre}}</p>
+                <p>Profesor: {{curso.profesor}}</p>
+                <p>Fecha Inicio: {{curso.fechaInicio | date:'dd/MM/yyyy' }}</p>
+                <p>Fecha Fin: {{curso.fechaFin | date:'dd/MM/yyyy' }}</p>
+                <p>Precio: {{curso.precio | currency: 'USD':'symbol':'1.2-2'}}</p>
+            </div>
+
+            <button class="btn btn-primary btnInscribir" (click)="onInscribir(curso)">
+                Inscribir
+            </button>
+            <button class="btn btn-success btnEditar" (click)="onEditar(curso)">
+                Editar
+            </button>
+            <button class="btn btn-danger btnBorrar" (click)="onDelete(curso)">
+                Eliminar
+            </button>
+        </div>
+    </swiper-slide>
+
+</swiper-container>
+<div class="btnContainer">
+    <button class="btn btn-warning btnNuevo" routerLink="/CursosNew" routerLinkActive="active">
+        Nuevo Curso
+    </button>
+</div>
